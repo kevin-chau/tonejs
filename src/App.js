@@ -9,13 +9,21 @@ class App extends Component {
     var synth = new Tone.Synth().toMaster();
 
     //Play a major scale starting on middle C
-    synth.triggerAttackRelease("C4", "8n");
-    synth.triggerAttackRelease("D4", "8n");
-    synth.triggerAttackRelease("E4", "8n");
-    synth.triggerAttackRelease("F4", "8n");
-    synth.triggerAttackRelease("G4", "8n");
-    synth.triggerAttackRelease("A4", "8n");
-    synth.triggerAttackRelease("B4", "8n");
+    synth.triggerAttackRelease("C4", "8n", 1.0);
+    synth.triggerAttackRelease("D4", "8n", 1.25);
+    synth.triggerAttackRelease("E4", "8n", 1.5);
+    synth.triggerAttackRelease("F4", "8n", 1.75);
+    synth.triggerAttackRelease("G4", "8n", 2.0);
+    synth.triggerAttackRelease("A4", "8n", 2.25);
+    synth.triggerAttackRelease("B4", "8n", 2.5);
+    synth.triggerAttackRelease("C5", "8n", 2.75);
+    synth.triggerAttackRelease("B4", "8n", 3.0);
+    synth.triggerAttackRelease("A4", "8n", 3.25);
+    synth.triggerAttackRelease("G4", "8n", 3.5);
+    synth.triggerAttackRelease("F4", "8n", 3.75);
+    synth.triggerAttackRelease("E4", "8n", 4.0);
+    synth.triggerAttackRelease("D4", "8n", 4.25);
+    synth.triggerAttackRelease("C4", "8n", 4.5);
 
     return (
       <div className="App">
